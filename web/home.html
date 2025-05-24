@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - CookEasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+    <!-- Hero section -->
+    <div class="section-header">
+        <div class="text-center py-5">
+            <h1 class="display-4" style="color: bisque;">Chào mừng đến với Thế Giới Công Thức Nấu Ăn</h1>
+            <p class="lead" style="color: bisque;">Khám phá hàng ngàn công thức nấu ăn thơm ngon cho bữa ăn gia đình</p>
+            <!-- <a href="./recipes.html" class="btn btn-primary">Xem Công Thức</a> -->
+        </div>
+    </div>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#">Công Thức</a>
+                    </li> -->
+
+                    <!-- ✅ Mục mới: Công thức đã lưu -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./favorites.html">Công thức đã lưu 💖</a>
+                    </li>
+
+                    <form class="d-flex ms-auto" role="search" style="margin-left: 30px;">
+                        <input class="form-control me-2" type="search" placeholder="Tìm món ăn..." aria-label="Search"
+                            id="searchInput">
+                    </form>
+
+                    <!-- Nút Thêm Công Thức -->
+                    <a href="./add.html" class="btn btn-success me-3">Thêm Công Thức</a>
+
+                    <!-- Tài khoản -->
+                    <li class="nav-item dropdown" style="margin-left: 1400px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            👤
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="../profile.html">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                            <li><a class="dropdown-item" href="#">Lịch sử đăng nhập</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" id="logoutButton">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Featured Recipes -->
+    <div class="products-wrapper p-4 mb-4">
+        <div class="container mt-5">
+            <h1 class="text-center" style="color: black; margin-bottom: 30px;">Những món ăn nổi bật của Bình Định</h1>
+            <div class="row">
+
+                <!-- Món 1 -->
+                <div class="col-md-4 card-item" data-title="Gỏi cá trích">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/R.9c4d6d25d0017619c1689c37aa8bc597?rik=wvS8sX17OwrKPg&riu=http%3a%2f%2fdulichthuduc.com.vn%2fvnt_upload%2fnews%2fNAM-TRUNG-BO%2fbinh-dinh%2fgoi_ca_chinh_binh_dinh_thu_duc_travel5.jpg&ehk=xrhcXzVadJ6ThE%2bh2EooDN%2bG45l6%2fm6i1oLl445a6KE%3d&risl=&pid=ImgRaw&r=0"
+                            class="card-img-top" alt="Gỏi cá chích Bình Định">
+                        <div class="card-body">
+                            <h5 class="card-title">Gỏi cá trích</h5>
+                            <a href="./goicatrich.html" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Món 2 -->
+                <div class="col-md-4 card-item" data-title="Dé bò Tây Sơn">
+                    <div class="card">
+                        <img src="https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/10/3/photo-1-1664791837174609767145.jpg"
+                            class="card-img-top" alt="Dé bò Tây Sơn">
+                        <div class="card-body">
+                            <h5 class="card-title">Dé bò Tây Sơn</h5>
+                            <a href="./debots.html" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Món 3 -->
+                <div class="col-md-4 card-item" data-title="Tré trộn Bình Định">
+                    <div class="card">
+                        <img src="https://nemchohuyen.com.vn/wp-content/uploads/2021/11/Untitled-design-2021-11-23T210805.505.png"
+                            class="card-img-top" alt="Tré trộn Bình Định">
+                        <div class="card-body">
+                            <h5 class="card-title">Tré trộn Bình Định</h5>
+                            <a href="./tretronbinhdinh.html" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Món 4 -->
+                <!-- <div class="col-md-4 card-item" data-title="Nem chợ huyện">
+                    <div class="card">
+                        <img src="https://alotravel.vn/source/tintuc/nem-cho-huyen-1.png" class="card-img-top"
+                            alt="Nem chợ huyện">
+                        <div class="card-body">
+                            <h5 class="card-title">Nem chợ huyện</h5>
+                            <a href="#" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Món 5 -->
+                <!-- <div class="col-md-4 card-item" data-title="Bún tôm Châu Trúc">
+                    <div class="card">
+                        <img src="https://toplist.vn/images/800px/bun-tom-chau-truc-66993.jpg" class="card-img-top"
+                            alt="Bún tôm Châu Trúc">
+                        <div class="card-body">
+                            <h5 class="card-title">Bún tôm Châu Trúc</h5>
+                            <a href="#" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Món 6 -->
+                <!-- <div class="col-md-4 card-item" data-title="Mực ngào Bình Định">
+                    <div class="card">
+                        <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/04/muc-ngao-binh-dinh.jpg"
+                            class="card-img-top" alt="Mực ngào Bình Định">
+                        <div class="card-body">
+                            <h5 class="card-title">Mực ngào Bình Định</h5>
+                            <a href="#" class="btn custom-btn">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Nơi hiển thị các công thức người dùng đã thêm -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Các công thức mà người dùng đã chia sẻ</h1>
+        <div class="row" id="recipe-list">
+            <!-- Các công thức sẽ được thêm vào đây bằng JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" style="background-color: #dbeeff;">
+        <p>&copy; 2025 Công Thức Nấu Ăn. All Rights Reserved.</p>
+        <p> Điều khoản và điều kiện</p>
+        <div class="menu-item"><a href="../terms_and_conditions/about.html">Giới thiệu</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/terms_of_use.html">Điều khoản sử dụng</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/privacy_policy.html">Chính sách bảo mật</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/contact.html">Liên hệ</a></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const recipeList = document.getElementById("recipe-list");
+            const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+
+            recipes.forEach((recipe, index) => {
+                const card = document.createElement("div");
+                card.className = "col-md-4 mb-4";
+
+                card.innerHTML = `
+                    <div class="card h-100 shadow-sm">
+                        ${recipe.image ? `<img src="${recipe.image}" class="card-img-top" alt="${recipe.title}">` : ""}
+                        <div class="card-body text-center">
+                            <h5 class="card-title">${recipe.title}</h5>
+                            <a href="detail.html?id=${index}" class="btn btn-outline-primary mt-2">Xem chi tiết</a>
+                        </div>
+                    </div>
+                `;
+
+                recipeList.appendChild(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

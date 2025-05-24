@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dé bò Tây Sơn - Công Thức Nấu Ăn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+body {
+    background-color: #faf3e0;
+    background: url('../images/hanhtinh.jpg');
+}
+
+.container-fluid {
+    background-color: #A0D2EB;
+}
+
+.nav-item1 {
+    margin-left: 800px;
+    background-color: #E27D60;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: #A0D2EB;
+}
+
+.menu-item a {
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+.nav-item1 {
+    margin-left: 1200px;
+}
+</style>
+
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Công Thức</a>
+                    </li>
+                    <!-- Tài khoản -->
+                    <li class="nav-item dropdown" style="margin-left: 1400px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            👤
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="./profile.html">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                            <li><a class="dropdown-item" href="#">Lịch sử đăng nhập</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" id="logoutButton">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="container my-5">
+        <!-- Nút Lưu Công Thức -->
+        <button class="btn" id="save-btn" data-id="goi-ca-trich" data-title="Gỏi cá trích Bình Định"
+            data-img="https://th.bing.com/th/id/R.9c4d6d25d0017619c1689c37aa8bc597?rik=wvS8sX17OwrKPg&riu=http%3a%2f%2fdulichthuduc.com.vn%2fvnt_upload%2fnews%2fNAM-TRUNG-BO%2fbinh-dinh%2fgoi_ca_chinh_binh_dinh_thu_duc_travel5.jpg&ehk=xrhcXzVadJ6ThE%2bh2EooDN%2bG45l6%2fm6i1oLl445a6KE%3d&risl=&pid=ImgRaw&r=0"
+            data-link="tretronbinhdinh.html">⭐</button>
+        <p id="save-msg" class="text-success"></p>
+        <h1 class="mb-4" style="color:black">Dé bò Tây Sơn</h1>
+        <img src="../images/deboTS.jpg" alt="Dé bò Tây Sơn" class="img-fluid rounded mb-4" style="max-width:700px;">
+        <div style="color: black;">
+            <h4>Nguyên liệu:</h4>
+            <ul>
+                <li>500g thịt bò (phần gân mềm hoặc thịt nạc vai)</li>
+                <li>1 củ hành tây</li>
+                <li>2 củ tỏi, ớt tươi</li>
+                <li>Gừng, sả</li>
+                <li>Gia vị: nước mắm, tiêu, muối, đường, ngũ vị hương</li>
+                <li>Bánh tráng và rau sống ăn kèm</li>
+            </ul>
+
+            <h4>Cách làm:</h4>
+            <ol>
+                <li>Thịt bò rửa sạch, để ráo và thái mỏng hoặc để nguyên miếng tùy sở thích.</li>
+                <li>Ướp bò với nước mắm, đường, tiêu, ngũ vị hương, tỏi băm, gừng đập dập khoảng 30 phút.</li>
+                <li>Cho bò vào nồi, đun nhỏ lửa cho đến khi nước cạn và bò mềm.</li>
+                <li>Thêm hành tây cắt lát vào đảo nhẹ tay, nêm lại cho vừa miệng.</li>
+                <li>Dọn ra đĩa, ăn kèm với bánh tráng, rau sống và chấm với nước mắm ớt tỏi.</li>
+            </ol>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/v88GJ0HXGeY" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <div style="background-color: #dbeeff;">
+        <footer class="text-center py-4 mt-5">
+            <p>&copy; 2025 Công Thức Nấu Ăn. All Rights Reserved.</p>
+            <p> Điều khoản và điều kiện</p>
+            <div class="menu-item"><a href="../terms_and_conditions/about.html">Giới thiệu</a></div>
+            <div class="menu-item"><a href="../terms_and_conditions/terms_of_use.html">Điều khoản sử dụng</a></div>
+            <div class="menu-item"><a href="../terms_and_conditions/privacy_policy.html">Chính sách bảo mật</a></div>
+            <div class="menu-item"><a href="../terms_and_conditions/contact.html">Liên hệ</a></div>
+        </footer>
+    </div>
+
+    <!-- Script lưu công thức -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = JSON.parse(localStorage.getItem("userLogin"));
+            const username = user?.Email;
+
+            const btn = document.getElementById("save-btn");
+            const msg = document.getElementById("save-msg");
+
+            if (!username) {
+                btn.disabled = true;
+                msg.innerText = "⚠️ Bạn cần đăng nhập để lưu công thức.";
+                return;
+            }
+
+            const key = `favorites_${username}`;
+            let favorites = JSON.parse(localStorage.getItem(key)) || [];
+
+            const id = btn.dataset.id;
+
+            if (favorites.some(r => r.id === id)) {
+                btn.innerText = "✅ Đã lưu";
+                btn.disabled = true;
+            }
+
+            btn.addEventListener("click", () => {
+                const recipe = {
+                    id: id,
+                    title: btn.dataset.title,
+                    img: btn.dataset.img,
+                    link: btn.dataset.link
+                };
+
+                if (!favorites.some(r => r.id === id)) {
+                    favorites.push(recipe);
+                    localStorage.setItem(key, JSON.stringify(favorites));
+
+                    btn.innerText = "✅ Đã lưu";
+                    btn.disabled = true;
+                    msg.innerText = "✅ Đã thêm vào danh sách yêu thích!";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

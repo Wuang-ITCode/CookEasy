@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết món ăn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdf6e3;
+            --text-color: #222;
+            --content-bg: #fffef5;
+        }
+    
+        body.dark-mode {
+            --bg-color: #1e1e1e;
+            --text-color: #eee;
+            --content-bg: #2c2c2c;
+        }
+    
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    
+        .navbar {
+            background-color: #a8d4ec;
+            padding: 10px 30px;
+        }
+    
+        .navbar-brand,
+        .nav-link {
+            font-weight: 500;
+            color: #333 !important;
+            font-size: 20px;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar-brand:hover {
+            color: #007bff !important;
+        }
+
+        .container-content {
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+    
+        .navbar .btn-logout {
+            background-color: #f08a5d;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            margin-left: auto;
+        }
+    
+        /* .container-content {
+            width: calc(100% - 40px);
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--content-bg);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        } */
+    
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    
+        h4 {
+            font-size: 22px;
+            margin-top: 30px;
+        }
+    
+        img {
+            display: block;
+            width: 100%;
+            height: 800px ;
+            object-fit: cover;
+            /* margin: 30px auto; */
+            border-radius: 10px;
+        }
+    
+        video {
+            display: block;
+            width: 100%;
+            max-height: 500px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+    
+        .btn-group-custom {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+    
+        .btn-toggle-dark {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+    
+        body.dark-mode .navbar {
+            background-color: #444;
+        }
+    
+        body.dark-mode .navbar-brand,
+        body.dark-mode .nav-link {
+            color: white !important;
+        }
+    
+        body.dark-mode .btn-logout {
+            background-color: #d66;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="./home.html">Trang chủ</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Công Thức</a></li>
+            </ul>
+            <button class="btn-toggle-dark me-2">🌙</button>
+            <button class="btn-logout">Đăng Xuất</button>
+        </div>
+    </nav>
+
+    <!-- Nội dung -->
+    <div class="container-content" id="recipe-detail">
+        <!-- Nội dung sẽ được render từ JS -->
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get("id");
+        const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+        const recipe = recipes[id];
+        const container = document.getElementById("recipe-detail");
+
+        if (recipe) {
+            container.innerHTML = `
+
+                <h2>${recipe.title}</h2>
+                <p>${recipe.description}</p>
+
+                ${recipe.image ? `   
+                    <img src="${recipe.image}" alt="Ảnh món ăn">
+                ` : ''}
+
+                <h4>Nguyên liệu</h4>
+                <p>${recipe.ingredients.replace(/\n/g, "<br>")}</p>
+
+                <h4>Cách làm</h4>
+                <p>${recipe.steps.replace(/\n/g, "<br>")}</p>
+
+                ${recipe.video ? `
+                    <h4>Video hướng dẫn</h4>
+                    <video controls>
+                        <source src="${recipe.video}" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ video.
+                    </video>
+                ` : ''} 
+                
+                <div class="class="btn btn-warning me-3"">
+                    <a href="edit.html?id=${id}" class="btn btn-warning">✏️ Chỉnh sửa công thức</a>
+                    <button class="btn btn-danger btn-delete" onclick="deleteRecipe(${id})">❌ Xóa Công Thức</button>
+                </div>
+
+            `;
+        } else {
+            container.innerHTML = `<p class="text-danger">Không tìm thấy công thức.</p>`;
+        }
+
+        function deleteRecipe(index) {
+                if (confirm("Bạn có chắc chắn muốn xóa công thức này?")) {
+                    const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+                    recipes.splice(index, 1);
+                    localStorage.setItem("recipes", JSON.stringify(recipes));
+                    alert("Đã xóa công thức.");
+                    window.location.href = "./home.html"; // Quay về trang danh sách
+                }
+            }
+
+        // Toggle Dark Mode
+        const toggleBtn = document.querySelector('.btn-toggle-dark');
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

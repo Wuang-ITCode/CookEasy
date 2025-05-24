@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gỏi cá trích Bình Định - Công Thức Nấu Ăn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+  body {
+    background-color: #faf3e0;
+  }
+
+  .container-fluid {
+    background-color: #A0D2EB;
+  }
+
+  .nav-item1 {
+    margin-left: 800px;
+    background-color: #f08a5d;
+    border-radius: 5px;
+  }
+
+  .navbar {
+    background-color: #A0D2EB;
+  }
+
+  .menu-item a {
+    text-decoration: none;
+  }
+
+  .menu-item a:hover {
+    text-decoration: underline;
+  }
+
+  #save-btn {
+  position: fixed;
+  top: 65px;
+  left: 10px;
+  z-index: 1000; /* Đảm bảo nằm trên các phần tử khác nếu cần */
+}
+</style>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./home.html">Trang chủ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- ✅ Mục mới: Công thức đã lưu -->
+          <li class="nav-item">
+            <a class="nav-link" href="./favorites.html">Công thức đã lưu 💖</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" style="margin-left: 825px; font-size: 20px;">Công Thức món ăn</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link" href="#" id="logoutButton">Đăng Xuất</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <div class="container my-5">
+    <!-- Nút Lưu Công Thức -->
+    <button class="btn" id="save-btn" data-id="goi-ca-trich" data-title="Gỏi cá trích Bình Định"
+      data-img="https://th.bing.com/th/id/R.9c4d6d25d0017619c1689c37aa8bc597?rik=wvS8sX17OwrKPg&riu=http%3a%2f%2fdulichthuduc.com.vn%2fvnt_upload%2fnews%2fNAM-TRUNG-BO%2fbinh-dinh%2fgoi_ca_chinh_binh_dinh_thu_duc_travel5.jpg&ehk=xrhcXzVadJ6ThE%2bh2EooDN%2bG45l6%2fm6i1oLl445a6KE%3d&risl=&pid=ImgRaw&r=0"
+      data-link="goicatrich.html">⭐</button>
+    <p id="save-msg" class="text-success"></p>
+    <h1 class="mb-4" style="color:black">Gỏi cá trích</h1>
+    <img src="https://th.bing.com/th/id/R.9c4d6d25d0017619c1689c37aa8bc597?rik=wvS8sX17OwrKPg&riu=http%3a%2f%2fdulichthuduc.com.vn%2fvnt_upload%2fnews%2fNAM-TRUNG-BO%2fbinh-dinh%2fgoi_ca_chinh_binh_dinh_thu_duc_travel5.jpg&ehk=xrhcXzVadJ6ThE%2bh2EooDN%2bG45l6%2fm6i1oLl445a6KE%3d&risl=&pid=ImgRaw&r=0" alt="Gỏi cá trích Bình Định" class="img-fluid rounded mb-4" style="min-width: 1300px; max-height: 700px;">
+
+    <div style="color: black; font-size: 20px;">
+      <h4>Nguyên liệu làm gỏi cá trích:</h4>
+      <ul>
+        <li>500g cá trích tươi</li>
+        <li>100 gram cơm dừa đã được bào mịn.</li>
+        <li>1 củ hành tây.</li>
+        <li>5 củ hành khô.</li>
+        <li>1 củ gừng.</li>
+        <li>3 trái ớt</li>
+        <li>2 củ tỏi.</li>
+        <li>1 trái chanh, 6 trái tắc.</li>
+        <li>1 củ gừng.</li>
+        <li>Nửa ký bún tươi mới.</li>
+        <li>100 gram bánh tráng chuyên dùng để cuốn gỏi.</li>
+        <li>Một xíu đậu phộng đã rang sẵn hoặc mua về tự rang.</li>
+        <li>Các loại rau sống ăn kèm.</li>
+        <li>Gia vị thông dụng như nước mắm, đường, muối,…</li>
+      </ul>
+
+      <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-2.jpg"
+        alt="Tré trộn Bình Định" class="img-fluid mb-4" style="min-width: 1300px; max-height: 700px;">
+
+      <h4>Mẹo nhỏ:</h4>
+      <ul>
+        <li>Để mua được cá trích thật ngon, hãy lựa chọn các con còn sống, nhìn thấy mắt cá trong suốt, mang cá hồng nhạt với lớp
+        vảy lấp lánh.</li>
+        <li>Không nên chọn cá có thân mềm oặt, cong vẹo, da trầy xước nhiều hoặc có mùi lạ.</li>
+      </ul>
+
+      <div style="font-size: 20px;">
+        <h4>Cách làm gỏi cá trích:</h4>
+          <b>Bước 1: Chuẩn bị nguyên liệu</b>
+            <ul>
+              <li>Rửa sạch cá trích, cắt bỏ đầu và xẻ ngang bụng rồi lọc xương, chỉ lấy phần thịt phi lê, sau đó cắt thịt thành miếng nhỏ vừa ăn.</li>
+              <li>Vắt lấy nước cốt chanh. Hành tây xắt lát mỏng và ngâm với nước lạnh cho bớt cay. Gừng thái sợi nhỏ, tỏi bóc vỏ rồi băm nhuyễn, ớt và rau răm xắt nhỏ.</li>
+            </ul>
+            <figure>
+              <img
+                src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-3.jpg"
+                alt="Sơ chế cá trích tươi để chuẩn bị làm gỏi chuẩn vị đặc sản vùng biển" class="img-fluid mb-4"
+                style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Sơ chế cá trích tươi để chuẩn bị làm gỏi chuẩn vị đặc sản vùng biển
+              </figcaption>
+            </figure>         
+          
+          <b>Bước 2: Làm tái cá trích</b>
+            <ul>
+              <li>Cho cá trích vào tô, thêm nước cốt chanh, bóp nhẹ và ướp khoảng 5 phút cho cá tái. Sau đó vắt bỏ nước và cho cá vào tô lớn.</li>
+            </ul>
+            <figure>
+              <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-4.jpg" alt="Ướp cá trích với nước cốt chanh để làm tái, giữ độ tươi ngon và vị chua nhẹ đặc trưng" class="img-fluid mb-4"
+                style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Ướp cá trích với nước cốt chanh để làm tái, giữ độ tươi ngon và vị chua nhẹ đặc trưng
+              </figcaption>
+            </figure>
+
+          <b>Bước 3: Phi hành khô</b>
+            <ul>
+              <li>Làm nóng chảo, đổ dầu ăn vào rồi cho hành khô vào phi vàng thơm. Sau đó, lấy ra để riêng.</li>
+            </ul>
+            <figure>
+              <img src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-5.jpg" alt="Hành tím được phi vàng giòn, góp phần tăng hương vị hấp dẫn cho món gỏi cá trích" class="img-fluid mb-4" style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Hành tím được phi vàng giòn, góp phần tăng hương vị hấp dẫn cho món gỏi cá trích
+              </figcaption>
+            </figure>
+
+          <b>Bước 4: Pha nước chấm</b>
+            <ul>
+              <li>Cho vào chén nhỏ 2 muỗng canh đường, 1 muỗng cà phê bột ngọt, 1 - 2 trái ớt, 2 tép tỏi, chút gừng băm, và nước cốt từ 2 trái tắc, sau đó đâm nhuyễn rồi thêm 3 muỗng canh nước mắm và khuấy đều.</li>
+            </ul>
+            <figure>
+              <img
+                src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-6.jpg"
+                alt="Nước chấm chua cay mặn ngọt hài hòa, thơm lừng mùi tỏi ớt và gừng" class="img-fluid mb-4"
+                style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Nước chấm chua cay mặn ngọt hài hòa, thơm lừng mùi tỏi ớt và gừng
+              </figcaption>
+            </figure>
+
+          <b>Bước 5: Chế biến gỏi cá trích</b>
+            <ul>
+              <li>Nêm vào tô chứa cá trích 1 muỗng đường, 2 muỗng nước mắm, ớt thái lát, nước cốt từ 4 trái tắc và hành tây thái mỏng, gừng đã được băm nhuyễn, sau đó trộn đều. Cuối cùng thêm rau răm và đậu phộng rang rồi tiếp tục khuấy kỹ.</li>
+            </ul>
+            <figure>
+              <img
+                src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-7.jpg"
+                alt="Gỏi cá trích trộn rau răm và đậu phộng rang hấp dẫn" class="img-fluid mb-4"
+                style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Gỏi cá trích trộn rau răm và đậu phộng rang hấp dẫn
+              </figcaption>
+            </figure>
+
+          <b>Bước 6: Thành phẩm</b>
+            <ul>
+              <li>Xếp cá ra đĩa, dùng muỗng rưới hành khô phi thơm đều lên mặt cá rồi rắc đậu phộng lên. Khi thưởng thức, bạn đặt bánh tráng ra trải các loại rau thơm, dưa leo và cuối cùng để vài lát cá trích rồi cuốn lại và chấm với nước chấm đã pha sẵn.</li>
+            </ul>
+            <figure>
+              <img
+                src="https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/kien-thuc/cach-lam-goi-ca-trich/cach-lam-goi-ca-trich-8.jpg"
+                alt="Gỏi cá trích chuẩn Phú Quốc với thành phẩm thơm ngon, ăn cực bắt vị" class="img-fluid mb-4"
+                style="min-width: 1300px; max-height: 700px;">
+              <figcaption style="font-style: italic; margin-top: 0%; text-align: center;">
+                Gỏi cá trích chuẩn Phú Quốc với thành phẩm thơm ngon, ăn cực bắt vị
+              </figcaption>
+            </figure>
+            
+      </div>    
+
+    <h3>Video hướng dẫn chi tiết</h3>
+    </div>
+      <iframe width="1300" height="700" src="https://www.youtube.com/embed/5xq4wHL_LSk?start=1" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5" style="background-color: #dbeeff;">
+    <p>&copy; 2025 Công Thức Nấu Ăn. All Rights Reserved.</p>
+    <p>Điều khoản và điều kiện</p>
+    <div class="menu-item"><a href="../terms_and_conditions/about.html">Giới thiệu</a></div>
+    <div class="menu-item"><a href="../terms_and_conditions/terms_of_use.html">Điều khoản sử dụng</a></div>
+    <div class="menu-item"><a href="../terms_and_conditions/privacy_policy.html">Chính sách bảo mật</a></div>
+    <div class="menu-item"><a href="../terms_and_conditions/contact.html">Liên hệ</a></div>
+  </footer>
+
+  <!-- Script xử lý lưu công thức -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const user = JSON.parse(localStorage.getItem("userLogin"));
+      const username = user?.Email; // Lấy email làm định danh
+  
+      const btn = document.getElementById("save-btn");
+      const msg = document.getElementById("save-msg");
+  
+      // if (!username) {
+      //   btn.disabled = true;
+      //   msg.innerText = "⚠️ Bạn cần đăng nhập để lưu công thức.";
+      //   return;
+      // }
+  
+      const storageKey = `favorites_${username}`;
+      let favorites = JSON.parse(localStorage.getItem(storageKey)) || [];
+  
+      const id = btn.dataset.id;
+  
+      // Kiểm tra nếu đã lưu
+      if (favorites.some(r => r.id === id)) {
+        btn.innerText = "✅ Đã lưu";
+        btn.disabled = true;
+      }
+  
+      // Sự kiện khi click nút lưu
+      btn.addEventListener("click", () => {
+        const recipe = {
+          id: id,
+          title: btn.dataset.title,
+          img: btn.dataset.img,
+          link: btn.dataset.link
+        };
+  
+        // Tránh lưu trùng
+        if (!favorites.some(r => r.id === id)) {
+          favorites.push(recipe);
+          localStorage.setItem(storageKey, JSON.stringify(favorites));
+  
+          btn.innerText = "✅ Đã lưu";
+          btn.disabled = true;
+          msg.innerText = "✅ Đã thêm vào danh sách yêu thích!";
+        }
+      });
+    });
+  </script>
+  
+</body>
+</html>

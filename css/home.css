@@ -1,0 +1,106 @@
+body {
+    /* background: url('../images/hanhtinh.jpg'); */
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position-y: -35px;
+    text-align: center;
+
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    grid-template-columns: repeat(3, 1fr);
+        /* Ba cột bằng nhau */
+        gap: 20px;
+        /* Điều chỉnh khoảng cách giữa các hình */
+    /* flex: 1; */
+}
+
+footer {
+    margin-top: auto;
+}
+
+.card img {
+    width: 100%;
+    /* Đảm bảo ảnh điền đầy khung */
+    height: 250px;
+    /* Thiết lập chiều cao cố định */
+    object-fit: cover;
+    /* Cắt ảnh để lấp đầy khung mà không bị méo */
+    border-radius: 10px;
+    /* Tùy chọn bo góc ảnh nếu cần */
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: transparent !important;
+}
+
+.card-title{
+    color: black;
+}
+
+/* .nav-item{
+    background-color: #B3E5FC;
+} */
+
+.container-fluid{
+    background-color: #A0D2EB;
+}
+
+/* .nav-item1{
+    margin-left: 950px;
+    background-color: #E27D60;
+    border-radius: 5px;
+} */
+
+.navbar{
+    background-color: #A0D2EB;
+}
+
+.section-header{
+    background-color: #2f3031;
+}
+
+.menu-item a{
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    text-decoration: underline;
+}
+
+.custom-btn {
+    /* background-color: #dff0ff; */
+    /* màu xanh nhạt */
+    color: #dbeeff;
+    /* chữ xanh dương đậm */
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #cce4ff;
+    /* màu hover xanh đậm nhẹ hơn */
+    color: #0056b3;
+    /* chữ đậm hơn khi hover */
+}
+
+.products-wrapper {
+    background-color: transparent;
+    /* Màu nền tối cho khung */
+    border: 3px solid #141311;
+    /* Viền vàng sang trọng */
+    border-radius: 20px;
+    /* box-shadow: 0 0 20px rgba(255, 204, 0, 0.2); */
+    margin: 0 auto;
+    width: 1500px;
+    padding-top: 10px;
+    margin-top: 20px;
+}

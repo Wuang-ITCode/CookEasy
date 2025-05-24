@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tré trộn Bình Định - Công Thức Nấu Ăn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<style>
+body{
+    background-color: #faf3e0;
+    /* background: url('../images/hanhtinh.jpg'); */
+}
+
+.container-fluid{
+    background-color: #A0D2EB;
+}
+
+.nav-item1{
+    margin-left: 1400px;
+    background-color: #f08a5d;
+    border-radius: 5px;
+}
+
+.navbar{
+    background-color: #A0D2EB;
+}
+
+.menu-item a{
+    text-decoration: none;
+}
+
+.menu-item a:hover{
+    text-decoration: underline;
+}
+
+#save-btn {
+  position: fixed;
+  top: 65px;
+  left: 10px;
+  z-index: 1000; /* Đảm bảo nằm trên các phần tử khác nếu cần */
+}
+
+.btn-toggle-dark {
+            background-color: #444;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+        }
+    
+        body.dark-mode .navbar {
+            background-color: #444;
+        }
+    
+        body.dark-mode .navbar-brand,
+        body.dark-mode .nav-link {
+            color: white !important;
+        }
+
+        body.dark-mode .btn-logout {
+            background-color: #d66;
+        }
+</style>
+
+<body data-mon="true">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Công Thức</a>   
+                    </li>
+                    <button class="btn-toggle-dark me-2">🌙</button>
+                    <!-- Tài khoản -->
+                    <li class="nav-item dropdown" style="margin-left: 1400px;">
+                        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            👤
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="./profile.html">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                            <li><a class="dropdown-item" href="#">Lịch sử đăng nhập</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#" id="logoutButton">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="container my-5">
+        <!-- Nút Lưu Công Thức -->
+        <button class="btn" id="save-btn" data-id="goi-ca-trich" data-title="Tré trộn Bình Định"
+            data-img="https://th.bing.com/th/id/R.9c4d6d25d0017619c1689c37aa8bc597?rik=wvS8sX17OwrKPg&riu=http%3a%2f%2fdulichthuduc.com.vn%2fvnt_upload%2fnews%2fNAM-TRUNG-BO%2fbinh-dinh%2fgoi_ca_chinh_binh_dinh_thu_duc_travel5.jpg&ehk=xrhcXzVadJ6ThE%2bh2EooDN%2bG45l6%2fm6i1oLl445a6KE%3d&risl=&pid=ImgRaw&r=0"
+            data-link="tretronbinhdinh.html">⭐</button>
+        <p id="save-msg" class="text-success"></p>
+        <h1 class="mb-4">Tré trộn Bình Định</h1>
+        <div>
+            <div class="left-column" style="font-size: 20px;">
+                <!-- <h3>Tré trộn đặc sản Bình Định, cách chế biến đơn giản nhất</h3> -->
+                    <p>Tré trộn là một đặc sản Bình Định được rất nhiều người ưa thích bởi nguồn nguyên liệu tươi mới, hương vị kích thích vị giác. Vậy thì món ăn này có gì mà lại thu hút nhiều người thưởng thức như vậy? Cùng tham khảo bài viết sau của <b>Cook-easy</b> để tìm hiểu về món ăn tré trộn và cách làm tré trộn đơn giản tại nhà nhé!</p>
+                <h3>Tré trộn là gì?</h3>
+                    <p>Tré là một đặc sản tại các tỉnh miền Trung nước ta. Khi chế biến, tré sẽ được sơ chế cẩn thận và bọc trong lá ổi, bên ngoài lại có thêm một lớp chuối. Để tré có thể lên men, người ta cần phải dùng rơm vàng bọc bên ngoài rồi đi đem phơi khô trong vòng 3 đến 4 ngày.</p>
+                    <p>Tré được làm từ thịt đầu heo hoặc thịt lỗ tai heo, cũng có một số nơi làm bằng thịt ba chỉ và trộn cùng với thịt bò theo một tỷ lệ nhất định. Món ăn tré trộn là sự kết hợp của rất nhiều các nguyên liệu khác nhau với nguyên liệu chính là tré. Các nguyên liệu này sau khi đã được sơ chế, người ta sẽ đem đi trộn đều với gia vị rồi ủ trong khoảng 2 ngày để tré chín là có thể đem ra thưởng thức.</p>
+                <h3>Tré trộn bắt nguồn từ đâu?</h3>
+                    <p>Tré trộn là một món đặc sản đã có từ rất lâu đời tại Bình Định, lâu đến mức ngay cả người dân địa phương cũng không rõ nó có từ bao giờ.</p>
+                    <p>Với hương vị thơm ngon, món tré trộn Bình Định đang trở nên rất quen thuộc với người dân cả nước và ngay cả những du khách nước ngoài. Món tré trộn gắn bó với họ trên bàn nhậu, cùng với những chai bia là một sự kết hợp rất hoàn hảo. Với du khách nước ngoài, tré trộn là đặc sản mà họ không thể nào bỏ qua khi dừng chân tại đây.</p>
+            </div>
+
+            <div class="right-column">
+                <img src="https://nemchohuyen.com.vn/wp-content/uploads/2021/11/Untitled-design-2021-11-23T210805.505.png" alt="Tré trộn Bình Định" class="img-fluid mb-4" style="min-width: 1300px; max-height: 700px;">
+            </div>
+
+            <div style="font-size: 20px;">
+                <h4>Nguyên liệu làm món tré trộn</h4>
+                <p>Để làm được món tré trộn đặc sản Bình Định thơm ngon, hấp dẫn, bạn cần chuẩn bị những nguyên liệu như sau:</p>
+                <ul>
+                    <li>5 tré nhỏ</li>
+                    <li>2 nem chua</li>
+                    <li>100g cóc non</li>
+                    <li>100g xoài xanh</li>
+                    <li>100g dưa chuột (dưa leo)</li>
+                    <li>5 quả trứng cút</li>
+                    <li>2 quả tắc</li>
+                    <li>30g tỏi</li>
+                    <li>20g ớt trái</li>
+                    <li>1 thìa cà phê bột ớt</li>
+                    <li>1 thìa cà phê muối tiêu</li>
+                    <li>Rau răm (tùy sở thích)</li>
+                </ul>
+                <p>Lưu ý một số điều khi lựa chọn nguyên liệu:</p>
+                <ul>
+                    <li>Đối với xoài, nên chọn những quả xoài cứng, có màu xanh đậm và vỏ phấn trắng, không nên chọn xoài mềm vì đó là những quả xoài đã chín bên trong hoặc để quá lâu. Phần cuống của xoài nên chọn những quả có dính mủ, hơi ươn ướt, tươi vì đó mới là những quả xoài mới được hái.</li>
+                    <li>Còn đối với cóc, nên lựa chọn những quả cóc có màu xanh tự nhiên, không quá sần sùi, tránh những quả cóc ngả vàng bởi thường nó sẽ hơi chín mềm và không phù hợp để trộn tré.</li>
+                    <li>Không được bỏ qua rau răm bởi nguyên liệu này sẽ giúp cho món tré trộn của bạn hấp dẫn hơn rất nhiều.</li>
+                </ul>
+                <img src="https://th.bing.com/th/id/OIP.CrELDyzOx-C30SmDUe76RAHaE8?cb=iwp2&rs=1&pid=ImgDetMain" alt="Các nguyên liệu làm tré trộn" style="min-width: 1300px; max-height: 700px;">
+                <br>
+                <img src="https://anhsang.edu.vn/wp-content/uploads/Qua-Que-Dac-san-Binh-Dinh-e1633238021485.jpg" alt="." style="margin-top: 10px; margin-bottom: 20px; min-width: 1300px; max-height: 700px;">
+                <br>
+                <img src="https://th.bing.com/th/id/OIP.aa1zgMVHUN_AIcbKKF1KiwHaHa?w=179&h=180&c=7&r=0&o=7&cb=iwp2&dpr=2.3&pid=1.7&rm=3" alt="."style="margin-top: 10px; margin-bottom: 20px; min-width: 1300px; max-height: 700px;">
+
+            </div>
+            
+            <div>
+                <h3 style="margin-bottom: 10px;">Cách làm tré trộn thơm ngon chuẩn vị:</h3>
+                    <b style="font-size: 20px;">Bước 1: Tiến hành sơ chế các nguyên liệu</b>
+                        <p style="font-size: 18px;">Công đoạn sơ chế nguyên liệu sẽ là việc đầu tiên mà bạn cần phải làm để có thể chế biến ra một món tré trộn hấp dẫn. Bạn hãy cho trứng cút vào nồi luộc chín rồi bóc thật sạch vỏ. Đối với 5 cây tré, 2 cây nem chua, bạn hãy cắt xéo thành những lát mỏng vừa ăn. Còn xoài xanh, cóc non, hãy rửa sạch, gọt vỏ rồi cắt lát vừa ăn. Tương tự đối với dưa chuột và ớt quả</p>
+                    <b style="font-size: 20px;">Bước 2: Trộn đều các nguyên liệu đã sơ chế</b>
+                        <p style="font-size: 18px;">Tất cả các nguyên liệu như tré, nem chua, cóc non, xoài xanh, dưa chuột, tỏi ớt đã được sơ chế ở bước trên, bạn hãy cho vào một chiếc tô lớn rồi trộn chúng thật đều. Hãy nêm nếm gia vị cho phần hỗn hợp đã được trộn. Công thức cho phần nước sốt gia vị là 1 muỗng canh bột ớt, 1 muỗng canh muối tiêu, 2 trái tắc vắt nước cùng với phần ram răm cắt nhuyễn tùy định lượng mà bạn đã chuẩn bị. Phần tré trước khi trộn cần được xé thật nhỏ để gia vị có thể thấm dễ hơn.</p>
+                    <b style="font-size: 20px;">Bước 3: Thành phẩm tré trộn</b>
+                        <p style="font-size: 18px;">Phần tré đã trộn hoàn thành ở phía trên, bạn hãy bày chúng ra đĩa và thêm trứng cút đã luộc, cắt đôi để hoàn thành công đoạn cuối cùng. Vậy là món tré trộn Bình Định của bạn đã hoàn thành với hương vị thấm đẫm, nguyên liệu hòa trộn dai dai, giòn giòn, mềm mềm vô cùng kích thích vị giác.</p>
+                <img src="https://i.ytimg.com/vi/QMKqgUtvq50/maxresdefault.jpg" alt="Thành phẩm tré trộn" style="margin-bottom: 35px; min-width: 1300px; max-height: 700px;">
+            </div>          
+        </div>
+        <h3>Video hướng dẫn chi tiết</h3>
+        <div>
+            <iframe width="1300" height="700" src="https://www.youtube.com/embed/b2eJ3uYHbd8" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5" style="background-color: #dbeeff">
+        <p>&copy; 2025 Công Thức Nấu Ăn. All Rights Reserved.</p>
+        <p> Điều khoản và điều kiện</p>
+        <div class="menu-item"><a href="../terms_and_conditions/about.html">Giới thiệu</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/terms_of_use.html">Điều khoản sử dụng</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/privacy_policy.html">Chính sách bảo mật</a></div>
+        <div class="menu-item"><a href="../terms_and_conditions/contact.html">Liên hệ</a></div>
+    </footer>
+
+    <!-- Script xử lý lưu công thức -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const user = JSON.parse(localStorage.getItem("userLogin"));
+            const username = user?.Email; // Lấy email làm định danh
+
+            const btn = document.getElementById("save-btn");
+            const msg = document.getElementById("save-msg");
+
+            // if (!username) {
+            //     btn.disabled = true;
+            //     msg.innerText = "⚠️ Bạn cần đăng nhập để lưu công thức.";
+            //     return;
+            // }
+
+            const storageKey = `favorites_${username}`;
+            let favorites = JSON.parse(localStorage.getItem(storageKey)) || [];
+
+            const id = btn.dataset.id;
+
+            // Kiểm tra nếu đã lưu
+            if (favorites.some(r => r.id === id)) {
+                btn.innerText = "✅ Đã lưu";
+                btn.disabled = true;
+            }
+
+            // Sự kiện khi click nút lưu
+            btn.addEventListener("click", () => {
+                const recipe = {
+                    id: id,
+                    title: btn.dataset.title,
+                    img: btn.dataset.img,
+                    link: btn.dataset.link
+                };
+
+                // Tránh lưu trùng
+                if (!favorites.some(r => r.id === id)) {
+                    favorites.push(recipe);
+                    localStorage.setItem(storageKey, JSON.stringify(favorites));
+
+                    btn.innerText = "✅ Đã lưu";
+                    btn.disabled = true;
+                    msg.innerText = "✅ Đã thêm vào danh sách yêu thích!";
+                }
+            });
+        });
+
+        // Toggle Dark Mode
+            const toggleBtn = document.querySelector('.btn-toggle-dark');
+            toggleBtn.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+            });
+    </script>
+
+</body>
+
+</html>

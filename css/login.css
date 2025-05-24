@@ -1,0 +1,48 @@
+body {
+    background: url('../images/1.avif') no-repeat center center fixed;
+    background-size: cover;
+    background-position-y: -35px;
+    text-align: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.9);
+    /* Màu nền trắng với độ trong suốt nhẹ */
+    padding: 20px;
+    /* Khoảng cách bên trong */
+    border-radius: 10px;
+    /* Bo góc */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Đổ bóng */
+    max-width: 440px;
+    /* Giới hạn chiều rộng */
+    margin: 50px auto;
+    /* Căn giữa theo chiều ngang */
+    /* text-align: center; */
+    /* Căn giữa nội dung */
+    /* width: 500px; */
+    /* Độ rộng khung */
+    /* height: 50px 50px; */
+    /* Chiều cao tự động theo nội dung */
+}
+
+/* Kiểu dáng cho input và button */
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

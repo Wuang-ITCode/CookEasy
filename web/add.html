@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm công thức</title>
+</head>
+
+<body>
+
+    <style>
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        form button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+        }
+    </style>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">📝 Thêm Công Thức Mới</h2>
+
+        <form id="recipeForm">
+            <div class="mb-3">
+                <label for="title">Tên món ăn</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="description">Mô tả</label>
+                <textarea id="description" name="description" rows="2" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="ingredients">Nguyên liệu</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="steps">Cách làm</label>
+                <textarea id="steps" name="steps" rows="4" required></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="image">Hình ảnh món ăn</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+            <img id="image-preview" src="" style="max-width: 100%; display: none;">
+
+            <div class="mb-3">
+                <label for="video">Video hướng dẫn</label>
+                <input type="file" id="video" name="video" accept="video/*">
+            </div>
+            <video id="video-preview" controls style="max-width: 100%; display: none;"></video>
+
+            <button type="submit">📤 Lưu Công Thức</button>
+        </form>
+    </div>
+
+    <script src="../js/add.js"></script>
+</body>
+
+</html>

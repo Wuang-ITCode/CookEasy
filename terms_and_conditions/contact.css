@@ -1,0 +1,82 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ .section-title {
+     color: #0066cc;
+     /* Màu xanh dương */
+     font-weight: bold;
+     /* Chữ đậm */
+     margin-bottom: 10px;
+     /* Cách dưới một chút */
+     font-size: 40px;
+     margin-top: 5px;
+ }
+
+ /* CSS cho đường kẻ màu xanh */
+ .blue-line {
+     height: 4px;
+     /* Độ cao của đường gạch */
+     width: 100%;
+     /* Chiều rộng 100% */
+     background-color: #0066cc;
+     /* Màu xanh dương */
+ }
+
+ .section-header {
+     color: #10161b;
+     /* font-weight: bold; */
+     font-size: 16px;
+     margin: 20px 0 10px 0;
+     border-bottom: 2px solid #111518;
+     padding-bottom: 5px;
+ }
+
+ .container {
+     display: flex;
+     padding: 20px;
+ }
+
+ .left-column {
+     flex: 3;
+     padding-right: 20px;
+     padding-left: 200px;
+ }
+
+ .right-column {
+     flex: 1;
+     border-left: 1px solid #ccc;
+     padding-left: 20px;
+     padding-right: 300px;
+ }
+
+ .menu-header {
+     background-color: #e0efff;
+     padding: 8px;
+     font-weight: bold;
+     color: #0073cf;
+ }
+
+ .menu-item {
+     padding: 10px;
+     border-top: 1px dashed #ccc;
+ }
+
+ .menu-item a {
+     text-decoration: none;
+     color: #0073cf;
+     font-weight: bold;
+ }
+
+ .menu-item a:hover {
+     text-decoration: underline;
+ }
+
+ /* .highlight-header {
+     background-color: #f0f8e0;
+     color: green;
+     padding: 8px;
+     font-weight: bold;
+ } */
